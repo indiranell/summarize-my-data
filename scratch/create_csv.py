@@ -2,7 +2,6 @@
 Scratch script to hep with the summarize-my-data work
 
 This script will write out a sample_data.csv file that will have random floats in the columns.
-To run: > python 
 """
 
 import os,sys
@@ -16,7 +15,7 @@ def create_csv(num_rows,num_columns,filename):
     "Write out a csv"
     random_matrix = np.random.uniform(1,100,(num_rows,num_columns))
     random_matrix_dataframe = pd.DataFrame(random_matrix)
-    random_matrix_dataframe.to_csv(OUTPUT_FILE+filename)
+    random_matrix_dataframe.to_csv(OUTPUT_FILE+filename,header=None,index=False)
     print 'Created the output file: %s'%OUTPUT_FILE+filename
 
 #----START OF SCRIPT
