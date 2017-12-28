@@ -28,7 +28,7 @@ class SummarizeMyData(object):
         "Use the modified to detect an outlier in the series"
         threshold = 3.5
         median = self.data.iloc[:,0].median()
-        sigma = self.data.iloc[:,0].std()
+        sigma = self.data.iloc[:,0].mad()
         modified_zscores = [value for value in self.data.iloc[:,0] if 0.6745 * (value - median)/sigma > threshold]
 
         return modified_zscores
