@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+*.lnk
+logs/
+screenshots/
+log/
+.DS_Store
+debug.log
+*.orig
+*credentials*.py
