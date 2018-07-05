@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Summarize my numbers for me!](README.md)
 
